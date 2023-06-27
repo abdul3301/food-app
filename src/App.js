@@ -1,8 +1,19 @@
-import logo from "./logo.svg";
+import { Fragment } from "react";
 import "./App.css";
+import Header from "./Components/Layout/Header";
+import MealsSummary from "./Components/Meals/MealsSummary";
+import AvailableMeals from "./Components/Meals/AvailableMeals";
 
 function App() {
-  return <div className="App">Lets get started</div>;
+  return (
+    <Fragment>
+      <Header />
+      <main>
+        <MealsSummary />
+        <AvailableMeals />
+      </main>
+    </Fragment>
+  );
 }
 
 export default App;
